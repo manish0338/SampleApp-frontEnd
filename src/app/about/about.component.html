@@ -1,0 +1,49 @@
+<!-- <div class="container-fluid">
+  <div class="jumbotron text-center">
+    <h1>
+      <span translate>Sample App</span>
+    </h1>
+    <p>
+      <i class="far fa-bookmark"></i> <span translate>Version</span> {{version}}
+    </p>
+  </div>
+</div> -->
+<h3>Dataset</h3>
+<table align='center' border=1 width='95%'>
+	<tr>
+		<th>Employee Name</th>
+		<th>Employee Number</th>
+		<th>State</th>
+		<th>Zip</th>
+		<th>DOB</th>
+		<th>Age</th>
+		<th>Sex</th>
+		<th>MaritalDesc</th>
+		<th>Date of Hire</th>
+		<th>Employment Status</th>
+		<th>Department</th>
+		<th>Position</th>
+		<th>Pay Rate</th>
+		<th>Manager Name</th>
+		<th>Employee Source</th>
+		<th>Performance Score</th>
+	</tr>
+	<tr *ngFor="let m of data">
+		<td>{{m['Employee Name']}}</td>
+		<td>{{m['Employee Number']}}</td>
+		<td>{{m['State']}}</td>
+		<td>{{m['Zip']}}</td>
+		<td>{{m['DOB']}}</td>
+		<td>{{m['Age']}}</td>
+		<td>{{m['Sex']}}</td>
+		<td>{{m['MaritalDesc']}}</td>
+		<td>{{m['Date of Hire']}}</td>
+		<td>{{m['Employment Status']}}</td>
+		<td>{{m['Department']}}</td>
+		<td>{{m['Position']}}</td>
+		<td>{{m['Pay Rate']}}</td>
+		<td>{{m['Manager Name']}}</td>
+		<td>{{m['Employee Source']}}</td>
+		<td>{{m['Performance Score']}}</td>
+	</tr>
+</table>
